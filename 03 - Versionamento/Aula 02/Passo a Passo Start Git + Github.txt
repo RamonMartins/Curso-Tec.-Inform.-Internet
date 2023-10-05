@@ -47,16 +47,23 @@ Passo a Passo Start Git + Github
 		==> git push
 	3 - Caso apareça o erro "The current branch master has no upstream branch.", quer dizer que você não informou qual branch(divisão) do projeto essas alterações estão sendo subidas, para isso rode o seguinte comando:
 		==>  git push --set-upstream origin master
-	4 - Após isso deve aparecer uma pequena janela para se conectar ao Github, clique em "Sign in with your browser" para fazer o login utilizando o navegador pois este já esta com sua conta logada.
-	5 - No navegador abriu uma nova aba, nela lhe é solicitado a autorização do Git na sua conta do Github, clique no botão "Authorize git-ecosystem" e em seguida confirme sua senha da conta do Github.
-	6 - Após aparecer a mensagem na tela o texto "Authentication Succeeded", está informando que foi autenticado com sucesso, feito isso volte ao terminal do Git e nele estará um log informando que foi feito o push com sucesso.
+	4 - Caso tenha aparecido o erro "error: failed to push some refs to", significa que as alterações do projeto que está no Github e do que está localmente não estão iguais, para resolver isso rode o comando:
+		==> git pull origin master
+	5 - Caso apareça o erro "fatal: refusing to merge unrelated histories", quer dizer que o projeto no Github e o projeto local são totalmente divergentes e não tem relações entre si, para resolver rode o comando abaixo:
+		==> git pull origin master --allow-unrelated-histories
+		Em seguida vai abrir um editor de texto no terminal, tecle "Esc" e em seguida digite ":wq" e dê enter, para salvar o titulo do commit e sair do editor de texto.
+	6 - Agora rode novamente o comando para setar a branch master:
+		==> git push --set-upstream origin master
+	7 - Após isso deve aparecer uma pequena janela para se conectar ao Github, clique em "Sign in with your browser" para fazer o login utilizando o navegador pois este já esta com sua conta logada.
+	8 - No navegador abriu uma nova aba, nela lhe é solicitado a autorização do Git na sua conta do Github, clique no botão "Authorize git-ecosystem" e em seguida confirme sua senha da conta do Github.
+	9 - Após aparecer a mensagem na tela o texto "Authentication Succeeded", está informando que foi autenticado com sucesso, feito isso volte ao terminal do Git e nele estará um log informando que foi feito o push com sucesso.
 
-12 - Após isso, acesse a página do seu repositório pelo site do Github, procure o botão "main" que possui um icone de ramificação ao lado dele, e no menu suspenso que apareceu, clique em "master", que é o nome da branch que criamos quando definimos lá no terminal do Git. Depois de clicado na master, você verá na tela que os arquivos que estão na sua pasta do computador agora estão dentro do seu repositório no Github na branch de nome master. Com isso você criou a primeira versão e seu primeiro commit do seu projeto.
+12 - Após isso, acesse a página do seu repositório pelo site do Github, atualize a página do repositório e você verá na tela que os arquivos que estão na sua pasta do computador agora estão dentro do seu repositório no Github na branch de nome master. Com isso você criou a primeira versão e seu primeiro commit do seu projeto.
 
 13 - Tendo já tudo configurado e dado o primeiro commit, agora os próximos passos se tratam apenas de adicionar novos arquivos ao seu projeto e/ou editar arquivos já existentes, após ter feito uma dessas duas ações rode o comando abaixo para adicionar esse arquivo:
 	==> git add .
 
-14 - Em seguida rode o comando para ver o status de o Git identificou que você modificou ou criou um novo arquivo:
+14 - Em seguida rode o comando para ver o status se o Git identificou que você modificou ou criou um novo arquivo:
 	==> git status
 
 15 - Após isso rode o comando para criar o commit dessa alteração/criação, lembrando que o texto entre aspas é uma breve descrição da alteração que você fez:
@@ -65,7 +72,11 @@ Passo a Passo Start Git + Github
 16 - Por fim, rode o comando para enviar essa alteração para o seu repositório la no Github:
 	==> git push
 
-17 - Processo concluido, os três comandos "add", "commit" e "push" precisam ser rodados sempre que você querer enviar uma nova alteração para seu projeto, toda a configuração anterior para definir o repositorio, o nome e email do autor, foram apenas configurações iniciais do Git que seram configuradas somente uma única vez.
+17 - Processo concluido, os três comandos "add", "commit" e "push" precisam ser rodados sempre que você querer enviar uma nova alteração para seu projeto, toda a configuração anterior para definir o repositorio foram apenas configurações iniciais do Git que seram configuradas somente uma única vez em cada projeto.
+
+
+
+
 
 OBS 1: Para saber qual nome e email está configurado como autor:
 	==> git config --global user.name
@@ -77,5 +88,5 @@ OBS 3: Para remover o link do repositório já definido:
 	==> git remote remove origin
 
 OBS 4: Caso o queira setar a "main" para fazer o push, e esteja aparecendo um erro dizendo que o o repositorio do Github está avançou alem do repositorio local e você pretende mesclar ambas os repositorios:
-	==> git pull origin main --allow-unrelated-histories
+	==> git pull origin master --allow-unrelated-histories
 	Em seguida digite o titulo do commit na linha após as linhas com #. Depois de digitar, tecle "Esc" e em seguida digite ":wq" e dê enter, para salvar o titulo do commit e sair do editor de texto.
