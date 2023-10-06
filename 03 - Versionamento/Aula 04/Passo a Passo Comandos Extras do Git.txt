@@ -54,4 +54,12 @@ Passo a Passo Comandos Extras do Git
 
 
 
-4.0 - 
+4.0 - Ignorar o envio de alguns arquivos para o repositório Remoto:
+4.1 - Caso você tenha colocado dentro da pasta do seu projeto algum arquivo que ti ajuda no projeto mas você não quer que ele seja enviado para o seu repositório remoto la no Github por algum motivo, você precisa criar o arquivo Git Ignore, para isso rode o comando:
+	==> touch .gitignore
+
+4.2 - Agora se você for até a pasta do projeto localmente, lá terá um novo arquivo chamado ".gitignore". Abra esse arquivo usando o bloco de notas para poder editar ele. Caso você tenha criado um arquivo pdf de nome "senhas.pdf", você precisa escrever exatamente o nome dele juntamente com a extensão pdf no bloco de notas do arquivo gitignore:
+	No .gitignore ==> senhas.pdf
+
+4.3 - E caso você queira que uma pasta inteira não seja enviada para o Github, basta colocar o nome da pasta seguido de uma /, desta maneira usando a pasta "senhas" ficaria assim:
+	No .gitignore ==> senhas/
