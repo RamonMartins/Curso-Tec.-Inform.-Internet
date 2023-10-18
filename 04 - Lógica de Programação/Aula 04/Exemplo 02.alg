@@ -1,14 +1,9 @@
-algoritmo "Estrutura Enquanto"
-
-var a: inteiro
+algoritmo "Estrutura SE"
 
 inicio
 
-    a <- 0
-
-    enquanto (a < 3) faca
-        escreval("oi ", a)
-        a <- a + 1
-    fimenquanto
+    se 1 > 2 faca
+        escreva("Oi")
+    fimse
 
 fimalgoritmo

@@ -1,14 +1,14 @@
-algoritmo "Estrutura Enquanto"
+algoritmo "Comparações"
 
-var a: inteiro
+var a, b: inteiro
 
 inicio
 
-    a <- 0
+    a <- 5
+    b <- 2
 
-    enquanto (a < 3) faca
-        escreval("oi ", a)
-        a <- a + 1
-    fimenquanto
+    escreval(a > b)
+    escreval(a = b)
+    escreva(a < b)
 
 fimalgoritmo
