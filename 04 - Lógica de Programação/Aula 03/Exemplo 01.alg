@@ -1,7 +1,6 @@
 algoritmo "Comparações"
 
-var 
-    a, b: inteiro
+var a, b: inteiro
 
 inicio
 

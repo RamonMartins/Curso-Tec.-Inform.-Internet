@@ -1,4 +1,4 @@
-algoritmo "Condicional SE juntamente do SENAO"
+algoritmo "Estrutura SE juntamente do SENAO"
 
 inicio
 

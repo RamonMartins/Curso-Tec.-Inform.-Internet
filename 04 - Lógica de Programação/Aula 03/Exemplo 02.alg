@@ -1,4 +1,4 @@
-algoritmo "Condicional SE"
+algoritmo "Estrutura SE"
 
 inicio
 
