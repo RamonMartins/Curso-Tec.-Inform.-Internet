@@ -1,0 +1,10 @@
+p{
+    color:crimson;
+    border: 2px dashed rgb(0, 0, 0);
+    font-size: 25px;
+    padding: 5px 7px 8px 3px;
+}
+
+h1{
+    text-align: center
+}
