@@ -1,7 +1,15 @@
+.lista_card{
+    background-color: gray;
+    width: fit-content;
+}
+
 .card{
+    background-color: red;
     border: 2px solid black;
     width: fit-content;
-    padding: 20px;
+
+    padding: 10px;
+    margin: 10px;
     
     display: flex;
     flex-direction: column;

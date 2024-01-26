@@ -1,10 +1,9 @@
-function acionar(){
+function verificar(){
+    let elemento = document.getElementById("titulo")
 
-    if (document.getElementById("luz").src.includes("pic_bulbon.gif")){
-        document.getElementById("luz").src = "pic_bulboff.gif"
+    if(elemento.textContent.toLowerCase().includes("o")){
+        alert("Tem a letra O")
     }else{
-        document.getElementById("luz").src = "pic_bulbon.gif"
+        alert("Não tem a letra O")
     }
-    
-    
 }

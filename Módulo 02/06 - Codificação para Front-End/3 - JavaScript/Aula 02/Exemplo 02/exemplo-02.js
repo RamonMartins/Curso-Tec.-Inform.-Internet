@@ -1,7 +1,9 @@
-function alterar(){
-    if (document.getElementById("titulo").textContent.includes("o")){
-        alert("deu certo")
+function interruptor(){
+    let elemento = document.getElementById("luz")
+
+    if(elemento.src.includes("pic_bulboff.gif")){
+        elemento.src = "pic_bulbon.gif"
     }else{
-        alert("não deu certo")
+        elemento.src = "pic_bulboff.gif"
     }
 }
