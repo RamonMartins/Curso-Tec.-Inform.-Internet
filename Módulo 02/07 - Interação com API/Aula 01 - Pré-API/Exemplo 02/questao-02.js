@@ -1,8 +1,9 @@
-let recebe = teste()
 
-function teste(){
-    return "oi"
-    //return 3 + 5
+
+function teste(x,y){
+    //return "oi"
+    return x + 5 - y
 }
 
-alert(recebe)
+let senai = teste(3,4)
+alert(senai)

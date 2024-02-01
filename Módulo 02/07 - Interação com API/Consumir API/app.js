@@ -7,29 +7,25 @@ buscarProdutos()
 async function buscarProdutos() {           // Cria uma função assíncrona(pausa a execução até o comando concluir por completo e receber uma resposta)
     let resposta = await fetch(endpoint)    // await solicita a pausa da execução ate receber a resposta
     produtos = await resposta.json()
-    console.log(produtos[0].nome)
-    console.log("oi")
-    exibirProdutos(produtos)
+    exibirProdutos(produtos)    
 }
 
 function exibirProdutos(produtos) {
-    produtos.forEach(produto => {
-        console.log(produto.nome)
-
+    console.log(produtos)
+    for (let x in produtos){
         inserirProduto.innerHTML += `
         <li class="produtos__item">
             <div class="produtos__content">
-                <img src="${produto.img}" alt="Imagem de celular">
+                <img src="${produtos[x].img}" alt="Imagem de celular">
                 <div class="produtos__informacoes">
-                    <h3>${produto.nome}</h3>
-                    <p>${produto.descricao}
+                    <h3>${produtos[x].nome}</h3>
+                    <p>${produtos[x].descricao}
                     </p>
-                    <h4>R$ ${produto.valorComDesconto}<s>R$ ${produto.valorSemDesconto}</s></h4>
-                    <p>${produto.tipoEntrega}</p>
+                    <h4>R$ ${produtos[x].valorComDesconto}<s>R$ ${produtos[x].valorSemDesconto}</s></h4>
+                    <p>${produtos[x].tipoEntrega}</p>
                 </div>
             </div>
         </li>
-        `
-
-    });
+        `;
+    }
 }
