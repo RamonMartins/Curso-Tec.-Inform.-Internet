@@ -1,11 +1,7 @@
-
-async function vaiPokemon(){
-    let pokedex = await fetch("pokemon.txt")
-    //console.log(pokedex)
-    let vaiBola = await pokedex.text()
-    //console.log(vaiBola)
-
-    document.getElementById("teste").textContent = vaiBola
+async function obter(){
+    let resposta = await fetch("pizza.txt")
+    let convertido = await resposta.text()
+    console.log(convertido)
 }
 
-vaiPokemon()
+obter()
