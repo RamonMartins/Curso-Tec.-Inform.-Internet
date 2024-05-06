@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'teste',
     'parte2',
+    'supermercado',
 ]
 
 MIDDLEWARE = [
