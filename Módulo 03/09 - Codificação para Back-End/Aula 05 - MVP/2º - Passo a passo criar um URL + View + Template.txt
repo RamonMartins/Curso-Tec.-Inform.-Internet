@@ -1,7 +1,7 @@
 2º - Passo a passo criar um URL + View + Template - Prof. Ramon Ferreira
 
 
-1- Crie um app e dentro da pasta do app crie uma pasta chamada "templates", entre nesta pasta criada e dentro dela crie a pasta "saudacoes", dentro dessa pasta saudacoes crie um arquivo de nome "ola_mundo" com extensão ".html", ficando então o arquivo assim "ola_mundo.html".
+1- Crie um app e dentro da pasta do app crie uma pasta chamada "templates", entre nesta pasta criada e dentro dela crie um arquivo de nome "ola_mundo" com extensão ".html", ficando então o arquivo assim "ola_mundo.html".
 
 2- Dentro desse arquivo HTML você vai construir sua pagina web em HTML. Um exemplo é código abaixo:
 
