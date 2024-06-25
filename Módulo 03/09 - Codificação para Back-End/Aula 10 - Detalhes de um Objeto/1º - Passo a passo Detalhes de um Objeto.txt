@@ -5,7 +5,7 @@
 
 1 - Crie um aplicativo chamado "vitrine". Crie uma tabela do banco de dados. O nome será "Produto". Terá como propriedades "nome_produto" onde será um campo CharField e "valor_produto" onde será um campo "DecimalField".
 
-2 - Configure o projeto para aceitar templates, criando assim a pasta templates.
+2 - Configure o projeto para aceitar templates, criando assim a pasta templates e registrando-a.
 
 3 - Crie um arquivo HTML na pasta "templates" com o código abaixo, nomei-o como "lista-produtos.html":
 
